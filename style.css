@@ -1,0 +1,339 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  *{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+ html{
+ font-size: 62.5%;
+  }
+  header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url(bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem 7rem;
+    background: #e3e6f3;
+}
+.header-section h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#navbar {
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+#navbar ul li a{
+    color: #262626;
+    font-size: 1.5rem;
+    font-size: bold;
+    transition: 0.4s ease;
+    position: relative;
+}
+#navbar ul li a:hover, #navbar ul li a.active{
+    color: #0eaea4;
+    
+}
+#navbar ul li a::after{ 
+    content: " ";
+    position: absolute;
+    width: 0;
+    left: 0.7rem;
+    left: 0.56rem;
+    background: #0eaea4;
+    top: 1.8rem;
+    bottom: 0;
+    height: 0.2rem; 
+    transition: 0.4s ease;
+}
+#navbar ul li a:hover::after{
+   width: 80%;
+}
+#close , #menu{
+    /* display: none; */
+}
+
+#close{
+    font-size: 2.2rem;
+    top: -17.5rem ;
+    position: absolute;
+    color: #0eaea4;
+}
+#menu{
+    font-size: 2.2rem;
+    color: #262626;
+}
+.header-data{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.header-data h1{
+    font-size: 4.3rem;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 5.7rem;
+}
+ 
+.header-data button{
+    padding: 1rem 2rem;
+    color: white;
+    background: transparent;
+    font-weight: bold;
+    border: 1.8px solid white;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+    margin-left: 0.3rem;
+}
+.header-data button:hover{
+    background: #0eaea4;
+    border: none
+}
+.r-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 0;
+}
+.r-section h2{
+    font-size: 3.6rem;
+    color: #262626;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.r-section p{
+    font-size: 1.6rem;
+    color: #465b52;
+    text-transform: capitalize;
+}
+/* T-shirts Section */
+.t-shirt{
+/* margin: 1rem 2rem; */
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pro{
+    width: 16%;
+    min-width: 20rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid #0eaea4a8;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    box-shadow: 2rem 2rem 3rem rgba(0,0,0,0.2);
+    margin: 1.5rem 2rem;
+    transition: 0.2 ease;
+    position: relative;
+}
+.pro img{
+    width: 100%;
+    height: 21.2rem;
+    border-radius: 30px;
+}
+.card-des h2{
+font-size: 1.3rem;
+color: #262626;
+padding-bottom: 0.3rem;
+margin-bottom: 0.6rem;
+}
+.card-des h3{
+    font-size:1.2rem;
+    color: #465b52;
+}
+.card-des span{
+    color: #0eaea4;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* .stars{
+    padding-bottom: 0.5rem;
+} */
+.stars i{
+    color: rgba(243, 181, 25);
+    font-size: 1.4rem;
+}
+.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.next a{
+    padding: 0.8rem 1.5rem;
+    background: #0eaea4;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.7rem;
+    border: 1px solid #0eaea4;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+.banner{
+    width: 100%;
+    height: 29vh;
+    background-image:url(../banner/banner.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+.banner h3{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+.banner button{
+    background: #0eaea4;
+    padding: 7px;
+    border: 1px solid #0eaea4;
+    cursor: pointer;
+    border-radius: 12px;
+    color: white;
+}
+.email #input{
+    width: 22rem;
+    height: 0.9rem;
+    padding: 1.7rem;
+    background: transparent;
+    border: 1px solid #262626;
+    border-radius: 34px;
+    color: #fff;
+}
+ /* Contact us */
+.row1{
+    margin: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-2{
+    margin-left: 177px;
+}
+.contact-des h3{
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+.contact-des{
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+.contact-des p{
+font-size: 1.5rem;
+font-weight: bold;
+color: #262626;
+cursor: pointer;
+padding-bottom: 1rem;
+transition: 0.4s ease;
+}
+.contact-des p:hover{
+    color: #0eaea4;
+}
+.contact-des span{
+font-size: 1.2rem;
+font-weight: bold;
+color: #262626;
+padding-bottom: 1rem;
+text-transform: capitalize;
+margin-left: 0.5rem;
+}
+.follow i{
+    font-size: 1.6rem;
+    color: #0eaea4;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+.follow{
+margin-top: 1rem;
+}
+/* Footer */
+footer{
+    text-align: center;
+    width: 100%;
+}
+footer p{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    letter-spacing: 1px;
+    background-color: #0eaea4;
+    color: white;
+}
+/* media quaries */
+@media (max-width:690px)
+{
+    .header-section{
+    padding:2rem 4rem;
+}
+    }
+@media (max-width:690px){
+    .header-section{
+        padding:2rem 4rem;
+    }
+}
+@media (max-width:630px){
+    .fa fa-shopping-bag{
+        display: none;
+    }
+    #close #menu{
+        /* display: block; */
+    }
+    #close{
+        font-size: 2,2rem;
+        top: -15.5rem;
+        position: absolute;
+        color: #0eaea4;
+    }
+   #navbar {
+        position: fixed;
+        right: 0px;
+        right: 0px;
+        top: 0;
+        height: 100vh;
+        background-color: #fff;
+    }
+    #navbar ul{
+        display: block;
+        padding: 4rem 1rem;
+        gap: 2rem;
+        transition: all 0.5s ease;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background: #fff;
+        width: 0%;
+        opacity: 0;
+    }
+    #navbar ul li{
+        padding: 0.5rem 0;
+    }
+}
